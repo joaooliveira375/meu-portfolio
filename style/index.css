@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --cor-primaria: black;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22D4FD;
+    --cor-hover: #272727;
+
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    /*height: 100vh; altura da página, irá ocupar a tela toda*/
+    box-sizing: border-box;
+}
+
+
+.cabecalho_home{
+    padding: 2% 0% 0% 17%;
+    margin-bottom: 10px;
+}
+
+
+.cabecalho_menu{
+    display:flex;
+    gap: 80px;
+    padding-bottom: 50px;
+}
+
+
+.cabecalho_menu_link:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-secundaria);
+}
+
+
+.cabecalho_menu_link{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.15rem; /*24px;*/
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    border: 2px solid var(--cor-terciaria);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+b{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+}
+
+.titulo-destaque{
+    color: var(--cor-terciaria);
+}
+
+strong{
+    color: var(--cor-terciaria);
+    font-style: italic;
+}
+
+.fotojoao{
+    border-radius: 25px;
+    width: 50%; /*488px; height: 550px; */
+}
+
+a{
+    text-decoration: none;
+}
+
+.apresentacao_home{
+    padding:3% 15%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+    width: 50%; /*615px;*/
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25rem;/*20px;*/
+}
+
+.apresentacao__titulo {
+    padding-top: 0%;
+    font-size: 2.25rem; /* 36px /16 = 2.25 rem = para acompanhar config ajustes aparencia tamanho fonte*/
+    font-family: var(--fonte-primaria);
+    font-family: var(--fonte-secundaria);
+}
+
+
+
+.apresentacao_subtitulo{
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 1.5rem; /*24px*/
+}
+
+.apresentacao_links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.botao {
+    /* background-color: greenyellow; Botao antigo*/
+    display:flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria);
+    width: 50%; /*378px;*/
+    border-radius: 8px;
+    text-align:  center;
+    font-size: 1.5rem; /*24px*/
+    font-weight: 600;
+    padding-top: 20px; padding-bottom:20px;
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    margin-bottom: 15px;
+}
+
+.botao:hover{
+    background-color: #272727;
+    padding: 3%;
+}
+
+.rodape {
+    margin-top: 80px;
+    color: #272727;
+    background-color: var(--cor-terciaria);
+    padding: 30px;
+    text-align:center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem; /*24px*/
+    font-weight: 400;
+}
+
+/*----------------------Curriculo-------------------------------------------*/
+
+.cabecalho_curriculo{
+    padding: 2% 0% 0% 17%;
+    margin-bottom: 10px;
+}
+
+
+.apresentacao_curriculo{
+    padding:0% 15%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 82px;
+}
+
+.apresentacao__conteudo_curriculo {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        gap:30px;
+        font-family: var(--fonte-secundaria);
+        font-size: 1.25rem;/*20px;*/
+        text-align: center;
+        align-items: center;
+}
+
+.certificado {
+    text-decoration: none;
+    color: var(--cor-terciaria);
+}
+
+.empresas {
+    text-decoration: none;
+    color:  var(--cor-terciaria);
+}
+
+
+/*--------------SOBRE MIM --------------------*/
+
+
+.cabecalho_sobremim{
+    padding: 2% 0% 0% 17%;
+
+}
+
+@media (max-width: 1200px) {
+    
+    .cabecalho_home{
+        padding:10%;
+
+    }
+
+
+    .cabecalho_sobremim{
+        padding:10%;
+
+    }
+
+    .cabecalho_curriculo{
+        padding: 10%;
+    }
+
+    .cabecalho_menu{
+        justify-content: center;
+    }
+
+
+    .apresentacao_home {
+        flex-direction: column-reverse;
+        padding: 5%;
+
+    }
+
+    .apresentacao_curriculo{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+
+
+    } 
+
+}
